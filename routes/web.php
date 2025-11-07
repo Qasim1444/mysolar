@@ -13,3 +13,55 @@ Route::get('/calculator/utility-provider', function () {
 Route::get('/calculator/utility-bill', function () {
     return view('Calculator.utilitybill');
 })->name('calculator.utility-bill');
+
+Route::view('/calculator/address', 'Calculator.address')->name('calculator.address');
+
+Route::view('/calculator/map', 'Calculator.map')->name('calculator.map');
+
+Route::get('/calculator/building', function () {
+    return view('Calculator.building');
+})->name('calculator.building');
+
+Route::get('/calculator/shade', function () {
+    return view('Calculator.shade');
+})->name('calculator.shade');
+
+Route::get('/calculator/prepare', function () {
+    return view('Calculator.prepare');
+})->name('calculator.prepare');
+
+Route::get('/calculator/currently', function () {
+    return view('Calculator.currently');
+})->name('calculator.currently');
+
+Route::get('/calculator/situations', function () {
+    return view('Calculator.situations');
+})->name('calculator.situations');
+
+Route::get('/calculator/describe', function () {
+    return view('Calculator.describe');
+})->name('calculator.describe');
+
+Route::get('/calculator/type', function () {
+    return view('Calculator.type');
+})->name('calculator.type');
+
+Route::get('/calculator/roof', function () {
+    return view('Calculator.roof');
+})->name('calculator.roof');
+
+Route::get('/calculator/repairs', function () {
+    return view('Calculator.repairs');
+})->name('calculator.repairs');
+
+Route::get('/calculator/estimate', function () {
+    return view('Calculator.estimate');
+})->name('calculator.estimate');
+
+Route::get('/calculator/interested', function () {
+    return view('Calculator.interested');
+})->name('calculator.interested');
+
+Route::get('/calculator/report', function () {
+    return view('Calculator.report');
+})->name('calculator.report');

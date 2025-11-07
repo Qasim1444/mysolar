@@ -15,23 +15,23 @@
 
       <!-- Slider Section -->
       <div class="text-center py-4">
-        <h2 class="fw-bold fs-1 text-primary">$150</h2>
+        <h2 id="billValue" class="fw-bold fs-1 text-primary">$150</h2>
 
         <div class="d-flex align-items-center justify-content-center mt-4">
           <span class="fw-bold text-secondary me-3">$50</span>
-          <input type="range" min="50" max="600" step="10" class="form-range w-50">
+          <input id="billRange" type="range" min="50" max="600" step="10" value="150" class="form-range w-50">
           <span class="fw-bold text-secondary ms-3">$600+</span>
         </div>
       </div>
 
       <!-- Buttons -->
       <div class="d-flex justify-content-between align-items-center mt-5">
-        <button class="btn btn-outline-secondary d-flex align-items-center">
+        <button class="btn btn-outline-secondary d-flex align-items-center" onclick="history.back()">
           <i class="bi bi-arrow-left me-2"></i> Back
         </button>
-        <button class="btn btn-warning text-white d-flex align-items-center">
+        <a href="{{ route('calculator.address') }}" class="btn btn-warning text-white d-flex align-items-center">
           Next <i class="bi bi-arrow-right ms-2"></i>
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -58,4 +58,15 @@
     </div>
   </div>
 </section>
+
+<!-- JavaScript -->
+<script>
+  const billRange = document.getElementById('billRange');
+  const billValue = document.getElementById('billValue');
+
+  billRange.addEventListener('input', function () {
+    billValue.textContent = `$${this.value}`;
+  });
+</script>
+
 @endsection

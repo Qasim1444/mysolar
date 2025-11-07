@@ -11,11 +11,11 @@
         <!-- Zip Code + Button -->
         <form class="d-flex justify-content-center align-items-center gap-2 flex-wrap"
             style="max-width: 400px; margin: 0 auto;">
-            <input type="text" class="form-control text-center" placeholder="Enter your zip code" maxlength="5"
-                style="width: 180px; padding: 12px 16px; border-radius: 6px;">
+            <input type="text" class="form-control text-center rounded" placeholder="Enter your zip code" maxlength="5"
+                style="width: 180px; padding: 12px 16px; border-radius: 20px;" value="61100">
             <button type="button" onclick="window.location.href='{{ route('calculator.utility-provider') }}'"
-                class="btn fw-bold text-white"
-                style="background-color: #f97316; border-radius: 6px; padding: 12px 24px;">
+                class="btn fw-bold text-white rounded"
+                style="background-color: #f97316; border-radius: 20px; padding: 12px 24px;">
                 Calculate Cost
             </button>
         </form>
@@ -34,7 +34,4 @@
     <div class="position-absolute bottom-0 end-0 p-4 text-end small opacity-75">
         ✅ Verified business on <strong>facebook</strong> & <strong>Google</strong>
     </div>
-
-
-
 </section>
