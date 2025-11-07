@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('layouts.app');
@@ -65,3 +66,9 @@ Route::get('/calculator/interested', function () {
 Route::get('/calculator/report', function () {
     return view('Calculator.report');
 })->name('calculator.report');
+
+// Static pages: About, Contact, Piracy Policy
+Route::view('/about', 'about')->name('about');
+Route::get('/contact', [ContactController::class, 'show'])->name('contact');
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+Route::view('/piracy-policy', 'piracy-policy')->name('piracy.policy');
