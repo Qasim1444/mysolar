@@ -1,5 +1,30 @@
 <section id="everything-you-need-to-know" class="py-5 bg-white">
-  <div class="container text-center">
+  <style>
+    /* Apply Roboto 400 styling to paragraph text in this section */
+    #everything-you-need-to-know p {
+      font-family: Roboto, ui-sans-serif, system-ui, -apple-system, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      color: rgb(51, 65, 85);
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+    }
+
+    /* Apply Roboto 600 styling to headings in this section */
+    #everything-you-need-to-know h2,
+    #everything-you-need-to-know h4 {
+      font-family: Roboto, ui-sans-serif, system-ui, -apple-system, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      color: rgb(0, 0, 0);
+      font-size: 24px;
+      line-height: 26px;
+      text-align: left;
+    }
+  </style>
+
+  <div class="container text-start">
     <h2 class="fw-bold mb-5">
       Everything you need to know about solar panels for home
     </h2>
