@@ -53,7 +53,7 @@
     </div>
 
     <div class="text-center mt-5">
-      <a href="https://www.mysolar.com/solar-calculator" class="btn text-white px-4 py-2 fw-medium" style="background-color: #f59e0b; border: none;">
+      <a href="{{ route('calculator.utility-provider') }}" class="btn text-white px-4 py-2 fw-medium" style="background-color: #f59e0b; border: none;">
         Get Started
       </a>
     </div>

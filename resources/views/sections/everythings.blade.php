@@ -20,11 +20,11 @@
       color: rgb(0, 0, 0);
       font-size: 24px;
       line-height: 26px;
-      text-align: left;
+      text-align: center;
     }
   </style>
 
-  <div class="container text-start">
+  <div class="container text-center">
     <h2 class="fw-bold mb-5">
       Everything you need to know about solar panels for home
     </h2>
@@ -80,7 +80,7 @@
     </div>
 
     <div class="mt-5">
-      <a href="https://www.mysolar.com/solar-calculator" class="btn btn-warning text-white px-4 py-2 fw-medium" style="background-color: #f97316; border: none;">
+      <a href="{{ route('calculator.utility-provider') }}" class="btn btn-warning text-white px-4 py-2 fw-medium" style="background-color: #f97316; border: none;">
         Get Started
       </a>
     </div>

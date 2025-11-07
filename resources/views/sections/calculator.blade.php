@@ -14,7 +14,7 @@
       to generate solar information customized specifically to your situation.
     </p>
     <div class="text-center">
-      <a href="https://www.mysolar.com/solar-calculator"
+      <a href="{{ route('calculator.utility-provider') }}"
          class="btn fw-medium px-4 py-2 text-white"
          style="background-color: #f59e0b; border: none;">
         Get Started

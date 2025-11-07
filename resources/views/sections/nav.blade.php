@@ -3,7 +3,7 @@
   <div class="container-fluid d-flex justify-content-between align-items-center">
 
     <!-- Brand Logo -->
-    <a class="navbar-brand" href="https://www.mysolar.com">
+    <a class="navbar-brand" href="/">
       <span id="_publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
         <meta itemprop="url" content="https://www.mysolar.com">
         <meta itemprop="name" content="MySolar">
